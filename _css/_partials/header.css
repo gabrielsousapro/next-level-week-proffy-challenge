@@ -44,6 +44,7 @@
     line-height: 2.6rem;
     color: var(--color-title-in-primary);
     margin-top: 2.4rem;
+    margin-bottom: 0.8rem;
 }
 
 @media (min-width: 700px) {

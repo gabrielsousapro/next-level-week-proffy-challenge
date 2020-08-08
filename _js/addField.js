@@ -6,6 +6,14 @@ document.querySelector("#add-time")
 // ativar uma função
 function cloneField() {
     //copiar o conteúdo do formulário, que formulário?
-    document.querySelector('.schedule.item')
-    // imprimir na tela
+    const newFieldContainer = document.querySelector('.schedule-item').cloneNode(true)
+    //limpar os campos. Que campos?
+    const fields = newFieldContainer.querySelectorAll('input')
+    // para cada campo, limpar
+    fields.forEach(function(field) {
+        // Pega o field do momento e limpa ele
+        field.value = ""
+    })
+    //onde copiar 
+    document.querySelector('#schedule-items').appendChild(newFieldContainer)
 }
